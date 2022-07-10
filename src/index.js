@@ -11,20 +11,24 @@ import {
   Route,
 } from "react-router-dom";
 import Login from './views/Login';
+import Homepage from './views/Homepage';
+import AppBar from './components/AppBar';
 const container = document.getElementById('root');
 const root = createRoot(container);
+reportWebVitals(console.log);
 
 root.render(
   <BrowserRouter>
+  <AppBar />
     <Provider store={store}>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="login" element={<Login />} />
+        <Route path="homepage" element={<Homepage />} />
       </Routes>
     </Provider>
 
   </BrowserRouter>
-
 
 );
 
