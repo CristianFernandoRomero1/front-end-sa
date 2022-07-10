@@ -15,7 +15,6 @@ import Homepage from './views/Homepage';
 import AppBar from './components/AppBar';
 const container = document.getElementById('root');
 const root = createRoot(container);
-reportWebVitals(console.log);
 
 root.render(
   <BrowserRouter>
