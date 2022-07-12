@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import {
@@ -21,7 +21,7 @@ root.render(
   <AppBar />
     <Provider store={store}>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Login />} />
         <Route path="login" element={<Login />} />
         <Route path="homepage" element={<Homepage />} />
       </Routes>
